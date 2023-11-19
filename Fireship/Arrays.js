@@ -22,7 +22,47 @@
 Try implementing these problems in JavaScript to get a better grasp of how each method works!
 */
 
-prices = [20, 30, 50, 80, 100]
-prices.forEach((element) => (element = element * .9))
-prices.forEach((element) => console.log(element))
 
+// forEach() -> Apply 10% discount to each item in array
+// function Example1() {
+//     // This is temporary
+//     const prices = [20, 30, 50, 80, 100]
+//     prices.forEach(element => {
+//         discountedPrices = element * .9
+//         console.log(discountedPrices)
+//     })
+
+//     // This permanently modifies the original
+//     const prices2 = [20, 30, 50, 80, 100];
+
+//     prices2.forEach((price, index, array) => {
+//         array[index] = price * 0.9;
+//         console.log(array[index])
+//     });
+
+
+
+//     // This creates a new list instead of modifying the original
+//     const prices3 = [20, 30, 50, 80, 100];
+
+//     const discountedPrices3 = prices3.map(price => price * 0.9);
+//     console.log(discountedPrices3); // This will log the array with the discounted prices.
+// }
+
+// map() -> Convert an array of tetmperatures in Celsius to Farenheit
+// function Example2() {
+//     const CtemperatureArray = [...Array(100).keys()]
+//     const FtemperatureArray = CtemperatureArray.map(celcius => parseFloat((celcius * (9/5) + 32).toFixed(2)))
+//     FtemperatureArray.forEach(farenheit => console.log(farenheit))
+// }
+// Example2()
+
+// .toFixed Test
+// console.log(parseFloat(7.365.toFixed(2))) // = 7.36
+
+// filter() -> From a list of numbers, create a new array that only includes numbers greater than 50.
+function Example3() {
+    const myArray = [22, 55, 33, 70, 42, 85]
+    myArray.filter(number => number > 50).forEach(number => console.log(number))
+}
+Example3()
