@@ -25,29 +25,30 @@ Try implementing these problems in JavaScript to get a better grasp of how each 
 
 // forEach() -> Apply 10% discount to each item in array
 // function Example1() {
-//     // This is temporary
-//     const prices = [20, 30, 50, 80, 100]
-//     prices.forEach(element => {
-//         discountedPrices = element * .9
-//         console.log(discountedPrices)
-//     })
+    // This is temporary
+    // const prices = [20, 30, 50, 80, 100]
+    // prices.forEach(element => {
+    //     discountedPrices = element * .9
+    //     console.log(discountedPrices)
+    // })
 
-//     // This permanently modifies the original
+    // This permanently modifies the original
 //     const prices2 = [20, 30, 50, 80, 100];
 
 //     prices2.forEach((price, index, array) => {
 //         array[index] = price * 0.9;
 //         console.log(array[index])
 //     });
-
-
-
-//     // This creates a new list instead of modifying the original
-//     const prices3 = [20, 30, 50, 80, 100];
-
-//     const discountedPrices3 = prices3.map(price => price * 0.9);
-//     console.log(discountedPrices3); // This will log the array with the discounted prices.
 // }
+// Example1();
+
+
+
+// // This creates a new list instead of modifying the original
+// const prices3 = [20, 30, 50, 80, 100];
+
+// const discountedPrices3 = prices3.map(price => price * 0.9);
+// console.log(discountedPrices3); // This will log the array with the discounted prices.
 
 // map() -> Convert an array of tetmperatures in Celsius to Farenheit
 // function Example2() {
@@ -61,8 +62,25 @@ Try implementing these problems in JavaScript to get a better grasp of how each 
 // console.log(parseFloat(7.365.toFixed(2))) // = 7.36
 
 // filter() -> From a list of numbers, create a new array that only includes numbers greater than 50.
-function Example3() {
-    const myArray = [22, 55, 33, 70, 42, 85]
-    myArray.filter(number => number > 50).forEach(number => console.log(number))
-}
-Example3()
+
+// function Example3() {
+//     const myArray = [22, 55, 33, 70, 42, 85]
+//     myArray.filter(number => number > 50).forEach(number => console.log(number))
+// }
+// Example3()
+
+// find() -> Find the first element in an array of strings that is longer than 5 characters.
+// const fruits = ["apple", "orange", "banana", "kiwi"]
+// const longFruits = fruits.find(fruit => fruit.length > 5)
+// console.log(longFruit); // This will log the first fruit name that is longer than 5 characters.
+
+// // findIndex() -> Determine the index of the first number that is odd in an array.
+// const numbers = [4, 8, 15, 16, 23, 42]
+// const firstOddIndex = numbers.findIndex(number => number % 2 !== 0);
+// console.log(firstOddIndex); // This will log the index of the first odd number.
+
+// reduce()
+// Reduce -> Calculate the total sum of all the numbers in an array.
+// const numbers = [1, 2, 3, 4, 5];
+// const totalSum = numbers.reduce((accumulator, currentNumber) => accumulator + currentNumber, 0);
+// console.log(totalSum); // This will log the sum of all numbers in the array.
